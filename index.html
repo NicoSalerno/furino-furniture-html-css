@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,65 +16,72 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-
     <title>Furino</title>
+    <link rel="icon" type="image/x-icon" href="/content/faviconV2.png/" />
   </head>
+
   <body>
     <div class="first-half">
-      <div>
-        <div class="navbar">
-          <h1>Funiro.</h1>
-          <p>
-            products<span class="material-symbols-outlined">
-              keyboard_arrow_down
-            </span>
-          </p>
-          <p>
-            Rooms
-            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
-          </p>
-          <p>Inspiration</p>
-          <div class="searchbar">
-            <span class="material-symbols-outlined"> search </span>
-            <p>search for minimalistic chair</p>
-          </div>
-
-          <div class="icons">
-            <span class="material-symbols-outlined"> favorite </span>
-            <span class="material-symbols-outlined"> shopping_cart </span>
-            <span class="material-symbols-outlined"> account_circle </span>
-          </div>
+      <div class="navbar">
+        <h1>Funiro.</h1>
+        <p>
+          products
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </p>
+        <p>
+          Rooms
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </p>
+        <p>Inspiration</p>
+        <div class="searchbar">
+          <span class="material-symbols-outlined">search</span>
+          <p>search for minimalistic chair</p>
         </div>
+        <div class="icons">
+          <span class="material-symbols-outlined">favorite</span>
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="material-symbols-outlined">account_circle</span>
+        </div>
+      </div>
 
+      <div class="main-content">
         <div class="button-container">
+          <a href="#slider-image-0" class="slider-change"></a>
           <a href="#slider-image-1" class="slider-change"></a>
           <a href="#slider-image-2" class="slider-change"></a>
-          <a href="#slider-image-3" class="slider-change"></a>
 
           <div class="arrows-wrapper">
             <a href="#slider-image-1" class="slider-change-arrow">
-              <span class="material-symbols-outlined">arrow_back_ios</span>
+              <span style="color: white" class="material-symbols-outlined"
+                >arrow_back_ios</span
+              >
             </a>
             <a href="#slider-image-2" class="slider-change-arrow">
-              <span class="material-symbols-outlined">arrow_forward_ios</span>
+              <span style="color: white" class="material-symbols-outlined"
+                >arrow_forward_ios</span
+              >
             </a>
           </div>
         </div>
 
         <div class="slider-container">
+          <span id="slider-image-0"></span>
           <span id="slider-image-1"></span>
           <span id="slider-image-2"></span>
           <span id="slider-image-3"></span>
 
           <div class="image-container">
             <div class="slide">
-              <img src="content/first-slide.jpg" alt="Slide 1" />
+              <img src="content/third-slide.jpg/" alt="Slide 0" />
             </div>
             <div class="slide">
-              <img src="content/second-slide.jpeg" alt="Slide 2" />
+              <img src="content/first-slide.jpg/" alt="Slide 1" />
             </div>
             <div class="slide">
-              <img src="content/first-slide.jpg" alt="Slide 3" />
+              <img src="content/second-slide.jpeg/" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img src="content/third-slide.jpg/" alt="Slide 3" />
             </div>
           </div>
         </div>
@@ -82,19 +90,20 @@
           <h1>High-Quality Furniture Just For You</h1>
           <p>
             Our furniture is made from selected and best quality that are
-            suitable for you dream home
+            suitable for your dream home
           </p>
-          <button>Shop now</button>
+          <button><strong>Shop Now</strong></button>
         </div>
 
         <div class="info-sofa">
           <h1>Bohauss</h1>
           <p style="color: grey">Luxury big sofa 2-seat</p>
           <p><strong>Rp 17.000.000</strong></p>
-          <span class="material-symbols-outlined"> arrow_forward </span>
+          <span class="material-symbols-outlined">arrow_forward</span>
         </div>
       </div>
     </div>
+
     <div class="second-half">
       <div class="stats">
         <div>
@@ -106,15 +115,15 @@
         </div>
         <div>
           <p>
-            <span class="material-symbols-outlined">verified</span>Warrany
+            <span class="material-symbols-outlined">verified</span>Warranty
             Protection <br />
             Over 2 years
           </p>
         </div>
         <div>
           <p>
-            <span class="material-symbols-outlined">package_2</span>Free
-            Shipping <br />
+            <span class="material-symbols-outlined">package_2</span>Free Shipping
+            <br />
             Order over 150 $
           </p>
         </div>
@@ -126,10 +135,55 @@
           </p>
         </div>
       </div>
+
       <div class="products">
         <h2>Our Products</h2>
+        <div class="products-container">
+          <div class="product">
+            <img src="content/syltherine.jpg/" alt="product 1" />
+            <span class="discount-dot">-30%</span>
+            <div class="product-body">
+              <p><strong>Syltherine</strong></p>
+              <p class="minor-text">Stylish cafe chair</p>
+              <p><strong>$ 245</strong> <del>$ 350</del></p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="content/leviosa.jpg" alt="product 2" />
+            <span class="discount-dot">-30%</span>
+            <div class="product-body">
+              <p><strong>Leviosa</strong></p>
+              <p class="minor-text">Stylish cafe chair</p>
+              <p><strong>$ 175</strong> <del>$ 250</del></p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="content/lolito.jpg" alt="product 3" />
+            <span class="discount-dot">-50%</span>
+            <div class="product-body">
+              <p><strong>Lolito</strong></p>
+              <p class="minor-text">Luxury big sofa</p>
+              <p><strong>$ 2.250</strong> <del>$ 4.500</del></p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="content/respira.jpg" alt="product 4" />
+            <span class="new-dot">New</span>
+            <div class="product-body">
+              <p><strong>Respira</strong></p>
+              <p class="minor-text">Minimalist fan</p>
+              <p><strong>$ 125</strong> <del>$ 250</del></p>
+            </div>
+          </div>
+        </div>
+        <button><strong>Show More</strong></button>
       </div>
     </div>
+
+    <div class="room-inspiration">
+      <h2>50+ Beautiful rooms inspiration</h2>
+    </div>
+
     <footer class="footer">
       <div class="footer-section">
         <h2>Funiro.</h2>
@@ -138,11 +192,11 @@
           products on our website
         </p>
         <p>
-          <span class="material-symbols-outlined"> distance </span>Sawojajar
+          <span class="material-symbols-outlined">distance</span>Sawojajar
           Malang, Indonesia
         </p>
         <p>
-          <span class="material-symbols-outlined"> call </span> +6289 456 3455
+          <span class="material-symbols-outlined">call</span> +6289 456 3455
         </p>
         <p>www.funiro.com</p>
       </div>
@@ -182,7 +236,7 @@
         <form>
           <input type="email" placeholder="Enter your email" />
           <button type="submit">
-            <span class="material-symbols-outlined"> send </span>
+            <span class="material-symbols-outlined">send</span>
           </button>
         </form>
       </div>
