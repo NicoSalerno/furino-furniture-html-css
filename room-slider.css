@@ -1,0 +1,131 @@
+/* Nascondi i radio input, ma servono per il funzionamento */
+.room-inspiration-slider-room input[type="radio"] {
+  display: none;
+}
+
+.room-inspiration-slider-room {
+  max-width: 95%;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.room-text {
+  width: 35%;
+}
+
+.slides-room {
+  position: relative;
+  width: 60%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Tutte le slide nascoste */
+.slide-room {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+/* Mostra solo la slide corrispondente */
+#slide1-room:checked ~ .slides-room #slide-1-room,
+#slide2-room:checked ~ .slides-room #slide-2-room,
+#slide3-room:checked ~ .slides-room #slide-3-room {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
+.slide-room img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls-room {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  width: 60%;
+  justify-content: center;
+  z-index: 10;
+}
+
+.controls-room label {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+#slide1-room:checked ~ .controls-room label[for="slide1-room"],
+#slide2-room:checked ~ .controls-room label[for="slide2-room"],
+#slide3-room:checked ~ .controls-room label[for="slide3-room"] {
+  background: #e89f71;
+}
+
+.arrow-room {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #e89f71;
+  cursor: pointer;
+  user-select: none;
+  z-index: 20;
+  transition: color 0.3s ease;
+  display: none; /* default nascoste */
+}
+
+.arrow-room:hover {
+  color: #d38f4d;
+}
+
+.arrow-next-room-back {
+  left: 340px;
+}
+
+.arrow-room {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #e89f71;
+  cursor: pointer;
+  user-select: none;
+  z-index: 20;
+  transition: color 0.3s ease;
+  display: none; /* default nascoste */
+}
+
+.arrow-room:hover {
+  color: #d38f4d;
+}
+
+.arrow-next-room {
+  right: 10px;
+}
+/* Mostra solo la freccia corrispondente alla slide attiva */
+#slide1-room:checked ~ #next1-room {
+  display: block;
+}
+#slide2-room:checked ~ #next2-room {
+  display: block;
+}
+#slide3-room:checked ~ #next3-room {
+  display: block;
+}

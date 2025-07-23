@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="room-slider.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="tips.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +19,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <title>Furino</title>
+    <title>Funiro</title>
     <link rel="icon" type="image/x-icon" href="/content/faviconV2.png/" />
   </head>
 
@@ -76,12 +79,30 @@
             </div>
             <div class="slide">
               <img src="content/first-slide.jpg/" alt="Slide 1" />
+              <div class="info-sofa">
+                <h1>Bohauss</h1>
+                <p style="color: grey">Luxury big sofa 2-seat</p>
+                <p><strong>$ 2.000</strong></p>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
             </div>
             <div class="slide">
               <img src="content/second-slide.jpeg/" alt="Slide 2" />
+              <div class="info-sofa">
+                <h1>Sirus</h1>
+                <p style="color: grey">Luxury king size bed</p>
+                <p><strong>$ 1.145</strong></p>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
             </div>
             <div class="slide">
               <img src="content/third-slide.jpg/" alt="Slide 3" />
+              <div class="info-sofa">
+                <h1>Nicola</h1>
+                <p style="color: grey">Luxury big sofa 2-seat</p>
+                <p><strong>$ 1.000</strong></p>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
             </div>
           </div>
         </div>
@@ -92,14 +113,7 @@
             Our furniture is made from selected and best quality that are
             suitable for your dream home
           </p>
-          <button><strong>Shop Now</strong></button>
-        </div>
-
-        <div class="info-sofa">
-          <h1>Bohauss</h1>
-          <p style="color: grey">Luxury big sofa 2-seat</p>
-          <p><strong>Rp 17.000.000</strong></p>
-          <span class="material-symbols-outlined">arrow_forward</span>
+          <button class="orange-button"><strong>Shop Now</strong></button>
         </div>
       </div>
     </div>
@@ -122,7 +136,8 @@
         </div>
         <div>
           <p>
-            <span class="material-symbols-outlined">package_2</span>Free Shipping
+            <span class="material-symbols-outlined">package_2</span>Free
+            Shipping
             <br />
             Order over 150 $
           </p>
@@ -137,10 +152,11 @@
       </div>
 
       <div class="products">
-        <h2>Our Products</h2>
+        <h2 style="font-size: 40px;">Our Products</h2>
         <div class="products-container">
           <div class="product">
             <img src="content/syltherine.jpg/" alt="product 1" />
+            <button class="product-button">Acquista ora</button>
             <span class="discount-dot">-30%</span>
             <div class="product-body">
               <p><strong>Syltherine</strong></p>
@@ -150,6 +166,7 @@
           </div>
           <div class="product">
             <img src="content/leviosa.jpg" alt="product 2" />
+            <button class="product-button">Acquista ora</button>
             <span class="discount-dot">-30%</span>
             <div class="product-body">
               <p><strong>Leviosa</strong></p>
@@ -159,6 +176,7 @@
           </div>
           <div class="product">
             <img src="content/lolito.jpg" alt="product 3" />
+            <button class="product-button">Acquista ora</button>
             <span class="discount-dot">-50%</span>
             <div class="product-body">
               <p><strong>Lolito</strong></p>
@@ -168,6 +186,7 @@
           </div>
           <div class="product">
             <img src="content/respira.jpg" alt="product 4" />
+            <button class="product-button">Acquista ora</button>
             <span class="new-dot">New</span>
             <div class="product-body">
               <p><strong>Respira</strong></p>
@@ -176,14 +195,154 @@
             </div>
           </div>
         </div>
-        <button><strong>Show More</strong></button>
+        <button class="products-button"><strong>Show More</strong></button>
       </div>
     </div>
 
-    <div class="room-inspiration">
-      <h2>50+ Beautiful rooms inspiration</h2>
+    <div class="third-part">
+      <div class="room-inspiration-slider-room">
+        <div class="room-text">
+          <h2>50+ Beautiful rooms inspiration</h2>
+          <p>
+            Our designer already made a lot of beautiful prototipe of rooms that
+            inspire you
+          </p>
+          <button
+            class="orange-button"
+            style="width: 50%; padding: 11px; margin: 0"
+          >
+            <strong>Explore More</strong>
+          </button>
+        </div>
+
+        <!-- Radio inputs con nomi e id univoci -->
+        <input type="radio" name="slider-room" id="slide1-room" checked />
+        <input type="radio" name="slider-room" id="slide2-room" />
+        <input type="radio" name="slider-room" id="slide3-room" />
+
+        <!-- Frecce indietro -->
+        <a href="#slide1-room" class="slider-change-arrow">
+          <span style="color: white" class="material-symbols-outlined"
+            >arrow_back_ios</span
+          >
+        </a>
+        <div class="slides-room">
+          <div class="slide-room" id="slide-1-room">
+            <img src="content/first-room.jpg" alt="room 1" />
+          </div>
+          <div class="slide-room" id="slide-2-room">
+            <img src="content/second-room.jpg" alt="room 2" />
+          </div>
+          <div class="slide-room" id="slide-3-room">
+            <img src="content/third-room.jpg" alt="room 3" />
+          </div>
+        </div>
+        <!-- Frecce avanti -->
+        <a href="#slide2-room" class="slider-change-arrow">
+          <span style="color: white" class="material-symbols-outlined"
+            >arrow_forward_ios</span
+          >
+        </a>
+        <div class="controls-room">
+          <label for="slide1-room"></label>
+          <label for="slide2-room"></label>
+          <label for="slide3-room"></label>
+        </div>
+      </div>
     </div>
 
+    <div class="fourth-half">
+      <section class="tips-section">
+        <h2 class="tips-title">Tips & Tricks</h2>
+        <div id="tips-carousel" class="tips-carousel">
+          <div class="tips-carousel-track">
+            <ul class="tips-carousel-list">
+              <li class="tips-carousel-slide">
+                <div class="tip-card">
+                  <img src="content/kitchen.jpeg" alt="Tip 1" />
+                  <div class="tip-info">
+                    <h3>Solution for clean look working space</h3>
+                    <div class="tip-date">10 Jan 2023</div>
+                  </div>
+                </div>
+              </li>
+              <li class="tips-carousel-slide">
+                <div class="tip-card">
+                  <img src="content/living-room.png" alt="Tip 2" />
+                  <div class="tip-info">
+                    <h3>Make your cooking activity more fun with good setup</h3>
+                    <div class="tip-date">6 Jan 2023</div>
+                  </div>
+                </div>
+              </li>
+              <li class="tips-carousel-slide">
+                <div class="tip-card">
+                  <img src="content/work-space.png" alt="Tip 3" />
+                  <div class="tip-info">
+                    <h3>How to create a living room to love</h3>
+                    <div class="tip-date">20 Jan 2023</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Frecce ai due estremi -->
+            <a
+              href="#prev"
+              class="tips-carousel-arrow tips-carousel-arrow-left"
+            >
+              <span class="material-symbols-outlined">arrow_back_ios</span>
+            </a>
+            <a
+              href="#next"
+              class="tips-carousel-arrow tips-carousel-arrow-right"
+            >
+              <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="tips-carousel-pagination">
+          <a href="#slider-image-0" class="tips-carousel-pagination-dot"></a>
+          <a href="#slider-image-1" class="tips-carousel-pagination-dot"></a>
+          <a href="#slider-image-2" class="tips-carousel-pagination-dot"></a>
+        </div>
+      </section>
+
+      <div class="forniture-text">
+        <p class="minor-text">Shape your forniture</p>
+        <p><strong>#FuniroForniture</strong></p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="content/gallery-01.jpg" alt="room 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="content/gallery-02.jpg" alt="room 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="content/gallery-03.jpg" alt="room 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="content/gallery-04.jpg" alt="room 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="content/gallery-05.jpg" alt="room 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="content/gallery-06.jpg" alt="room 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="content/gallery-07.jpg" alt="room 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="content/gallery-08.jpg" alt="room 8" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-line"></div>
     <footer class="footer">
       <div class="footer-section">
         <h2>Funiro.</h2>
@@ -233,7 +392,7 @@
 
       <div class="footer-section">
         <h3>Stay Updated</h3>
-        <form>
+        <form class="form">
           <input type="email" placeholder="Enter your email" />
           <button type="submit">
             <span class="material-symbols-outlined">send</span>

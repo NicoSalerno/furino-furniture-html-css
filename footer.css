@@ -1,10 +1,19 @@
+footer hr {
+    max-width: 60%;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
     background-color: white;
     padding: 2rem 4rem;
-    border-top: 1px solid #ddd;
     flex-wrap: wrap;
+}
+
+.footer-line {
+    border-top: 1px solid #ddd;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .footer li {
@@ -33,6 +42,8 @@
 .footer-section ul {
     list-style: none;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-section input[type="email"] {
@@ -56,6 +67,11 @@
     background-color: #d38f4d;
 }
 
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 768px) {
 
     .footer {

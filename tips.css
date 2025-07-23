@@ -1,0 +1,147 @@
+.tips-section {
+    padding: 60px 0 40px 0;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    /* per posizionare frecce assolute */
+}
+
+.tips-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.tips-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tips-carousel-track {
+    overflow: visible;
+    position: relative;
+}
+
+.tips-carousel-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.tips-carousel-slide {
+    flex: 1 0 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.tip-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 340px;
+}
+
+.tip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.tip-info {
+    padding: 24px 18px 18px 18px;
+    text-align: left;
+}
+
+.tip-info h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.tip-date {
+    color: #888;
+    font-size: 0.98rem;
+}
+
+.tips-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e49a66;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    transition: background 0.2s, transform 0.2s;
+    z-index: 10;
+}
+
+.tips-carousel-arrow:hover {
+    background: #cf8150;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.tips-carousel-arrow:focus {
+    outline: 2px solid #e49a66;
+}
+
+.tips-carousel-arrow-left {
+    left: -60px;
+}
+
+.tips-carousel-arrow-right {
+    right: -60px;
+}
+
+.tips-carousel-arrow .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.tips-carousel-pagination {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.tips-carousel-pagination a[href="#slider-image-0"]:first-child {
+    background-color: #e89f71;
+    border: 1px solid #e89f71;
+    /* sottile cerchio attorno */
+    box-shadow: 0 0 0 4px rgba(232, 159, 114, 0.3);
+    /* alone esterno sfumato */
+    border-radius: 50%;
+}
+
+.tips-carousel-pagination-dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tips-carousel-pagination-dot:hover {
+    background-color: #e89f71;
+}
+
+
+.tips-carousel-pagination-dot.active {
+    background: #e89f71;
+    transform: scale(1.2);
+}

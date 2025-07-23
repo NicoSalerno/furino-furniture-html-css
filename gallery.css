@@ -1,0 +1,35 @@
+.gallery {
+  columns: 4 200px; /* 4 colonne minime di 200px */
+  column-gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    columns: 2 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    columns: 1 100%;
+  }
+}
